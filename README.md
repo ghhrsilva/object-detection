@@ -1,19 +1,30 @@
-# Real-Time Object Detection System
+# Real-Time Object Detection System — v2.0
+
+**YOLOv8 · OpenCV · Python**
+
+A production-quality, real-time object detection system with a premium HUD overlay, designed for clean demos and practical AI applications.
+
+---
 
 ## 🚀 Overview
-This project implements a real-time object detection system using YOLOv8 and OpenCV. It captures live webcam input and detects multiple objects with bounding boxes.
+
+This project performs real-time object detection using YOLOv8 and OpenCV. It captures live webcam input, detects multiple objects, and displays results with a structured visual dashboard.
+
+---
 
 ## 🧠 Features
-- Real-time object detection via webcam
-- Multiple object classification
-- Lightweight YOLOv8 model for fast performance
 
-## 🛠️ Tech Stack
-- Python
-- OpenCV
-- Ultralytics YOLOv8
+| Feature | Details |
+|--------|--------|
+| 🟢 Human Detection | Highlighted in **lime green** with confidence score |
+| 🔵 Object Detection | Other objects displayed in **blue** |
+| 🔢 Live Counting | Separate counts for humans and other objects |
+| 📊 HUD Dashboard | Semi-transparent overlay with Humans · Objects · FPS · Inference time |
+| ⚡ Performance Metrics | Real-time FPS and inference timing |
+| 🎯 Smart Filtering | Confidence, IOU, and minimum box area filtering |
+| 🧵 Threaded Capture | Non-blocking camera input for smoother performance |
+| 🏗️ Clean Architecture | Modular, scalable code structure |
 
-## ▶️ How to Run
-```bash
-pip install ultralytics opencv-python
-python detect.py
+---
+
+## 📁 Project Structure
